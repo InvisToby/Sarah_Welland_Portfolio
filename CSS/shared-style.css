@@ -1,0 +1,348 @@
+* {box-sizing: border-box;}
+
+html{
+  -webkit-text-size-adjust: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(235, 206, 170);
+  background-image: linear-gradient(#1f1249, rgb(27, 75, 98));
+  background-color:rgb(31, 18, 73);
+  /*rgb(2, 71, 92);*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: teal;
+  margin: 0;
+  display:block; 
+  background: url(../Images/starry_cloud_bk.png) no-repeat 100%;
+  background-position: bottom;
+  background-size: 100%; 
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+
+div {
+  display: block;
+}
+
+.container{
+	padding: 5px;
+	margin: 0px;
+	border-top: double 2px white;
+}
+/*==================== Banner ====================*/
+
+#bannerBorder{
+  background-color: rgb(2, 44, 44);
+  width: 100%;
+  height: 10px;
+
+}
+
+.bannerHere{
+  background: url(../Images/space_banner.jpg) no-repeat 100%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-sizeL: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 900px;
+}
+
+/*==================== nav bar ====================*/
+
+.headerNav{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 800px;
+  display: grid; /*Displays a block-level grid container*/
+  grid-template-columns: auto auto auto; /*3 coloumn for navigation*/
+  grid-gap: 10px; /*small space between grid*/
+  padding: 10px 20px;
+  overflow: hidden;
+  background-color: transparent;
+
+}
+
+.nameLeft{
+  width: 350px;
+  height: auto;
+  padding: 10px 20px;
+
+  font-family: Bahnschrift;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(253, 253, 254);/*colour white*/
+}
+
+.nav{
+  column-width: 700px;
+  height: auto;
+  min-height: auto;
+  display: block;
+  padding: 10px 10px;
+  overflow: hidden; 
+}
+
+.menu-container{
+  height: auto;
+  padding: 10px;
+
+}
+
+.menu-container a{
+  padding: 20px; /* padding for text */
+  text-decoration: none; /*remove underline*/
+  color: rgb(253, 253, 254); /*colour white*/
+  font-family: Bahnschrift;
+  font-size: 20px;
+  text-align: center; /*center text*/
+  cursor: pointer;
+}
+
+.menu-container a:hover{
+  color: rgb(216, 147, 133);/*font color when hover over navbar */
+  font-weight: bold; /* bold when hovered over */
+}
+
+li {
+  float: right;
+  list-style-type: none; /*removes list styles*/
+}
+
+/*==================== Pop-up Contact Form ====================*/
+
+.contact{
+  display: block;
+  width: 250px;
+  height: auto;
+  padding: 10px 20px;
+  padding-left: 800px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(253, 253, 254);/*colour white*/
+  cursor: pointer;
+}
+
+  
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup_column_1 {
+/*background-image: url(../Images/Stars.png);*/
+  float: left; 
+  width: 50%;  /*This ensures one column takes up half the page width */
+  /*padding: 10px; 
+  padding-top: 3%;  This ensures there is space between the top of the column and our headings */
+  /*height: 600px;  column height 600px */
+  /*background-color: rgba(158, 184, 218, 0.635)*/
+}
+
+.popup_column_2 {
+  background-image: url(../Images/Stars.png);
+  background-image: linear-gradient(#2e647c, rgb(138, 50, 126));
+  float: right;
+  height: 689px;
+  width: 50%;
+  padding: 10px;
+  padding-left: 10%;
+  padding-top: 3%;
+  background-color: #5c0f52;
+  z-index: 9;
+}
+
+.Deen img{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+/* hidden by default */
+.contact-popup {
+  display: none;
+  position: fixed;
+  width: 1200px;
+  height: 400px;
+  top: 25%;
+  left: 30%;
+  z-index: 9;
+}
+
+.contact-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.contact-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When clicked in, focus, change background colour in box */
+.contact-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Full-width textarea */
+.contact-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets clicked in, focus, change background colour in box  */
+.contact-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/*button submit style */
+.contact-container .btn {
+  color: #9dbfcf;
+  background-color: transparent;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* close button colour */
+.contact-container .close {
+  color: #9dbfcf;
+  background-color: transparent;
+}
+
+/* hover effects for buttons */
+.contact-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+a:link{
+  cursor: pointer;
+  color: #f1f1f1;
+
+}
+a:visited {
+  color: white;
+}
+
+/*==================== ====================*/
+
+/*row*/
+
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*==================== ====================
+
+.starry_clouds{
+  width: 100%;
+  position: absolute; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+*/
+/*==================== Footer and Socials ====================*/
+footer{
+  display: block;
+  width: 100%;
+  height: 100px;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+
+  background-color: rgb(0, 27, 39);
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  z-index: 1;
+}
+
+#socials{
+  position: relative;
+  display: inline-block;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding: 5px;
+}
+
+
+#socials img{
+  vertical-align: middle;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+}
+
+
+/*
+img {
+  vertical-align: middle;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+}
+*/

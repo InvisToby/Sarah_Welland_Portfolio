@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SarahWelland(inVisToby) Portfolio</title>
+        <link rel="stylesheet" href="CSS/gallery-style.css">
+        <link rel="stylesheet" href="CSS/shared-style.css">
+    </head>
+
+    <body>
+
+        <div id="bannerBorder"></div>
+
+        <div>
+            <div class="bannerHere"></div>
+        </div>
+    
+        <div class="headerNav">
+
+            <div class="nameLeft">
+                <h2>Sarah Welland</h2>
+            </div>
+    
+            <div class="nav">
+    
+                <div class ="menu-container">
+                    <ul>
+                        <li><a href="#socials">Socials</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="index.html">About</a></li> 
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="contact">
+                <a class="open-contact" onclick="openContactForm()"><h2>Contact</h2></a>
+            </div>
+        </div>
+       
+       <!--Gallery-->
+       <div id="gallery">
+        
+            <div class="title">
+                <h1 >Gallery</h1>
+                <p> A sample of some of my pieces, from Illustrations, Design, commission pieces and Fanart
+                <br>
+                (Click to enlarge)</p>
+            </div>
+
+        
+            <!--Misc-->
+            <div class="gallery-container">
+                
+                <div id="misc" class="titleInfo">
+                    <h1>My Artwork</h1>
+                    <p></p>
+                </div>
+
+                <div class="flex-container">
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Artwork/Portfolio_1sml.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Deen Pancake">
+
+                        </div>
+                    </div>                        
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Artwork/Portfolio_2sml.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Pancake Drizzled with syrup">
+
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Artwork/Portfolio_3sml.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="cat chilling in pancake">
+
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Artwork/Portfolio_4sml.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Ham and ramen">
+               
+                        </div>
+                    </div>   
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Artwork/Portfolio_5sml.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Theatre rainbow fish">
+
+                        </div>
+                    </div>    
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Artwork/Portfolio_6sml.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Toby Hook">
+
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Artwork/Portfolio_7sml.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Uncle Ali">
+
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Artwork/Portfolio_8sml.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Azmans Cat">
+ 
+                        </div>
+                    </div>   
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Artwork/Portfolio_9sml.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Japanese Maple, wedding invite">
+                        </div>
+                    </div>    
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Artwork/Portfolio_10sml.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Wedding table Numbers">
+                        </div>
+                    </div>    
+
+                </div>
+            </div>
+            <!--Misc-->
+
+            <!--Posters and Backgrounds-->
+            <div class="gallery-container">
+                <div id="PnE" class="titleInfo">
+                    <h1>Posters and Backgrounds</h1>
+                    <p></p>
+                </div>
+
+                <div class="flexbox-container">
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_1sml.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="">
+                        </div>
+                    </div>                        
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_2sml.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="">
+                        </div>
+                    </div>           
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_3sml.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="">
+                        </div>
+                    </div>                        
+                    
+                    <!--
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_4sml.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="">
+                        </div>
+                    </div>     
+                    -->
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Poster_Backgrounds/Portfolio_5sml.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="">
+                        </div>
+                    </div>                        
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Poster_Backgrounds/Portfolio_6sml.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="">
+                        </div>
+                    </div>           
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_7sml.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="">
+
+                        </div>
+                    </div>                        
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_8sml.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="">
+                        </div>
+                    </div>
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Poster_Backgrounds/Portfolio_9sml.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="">
+                        </div>
+                    </div>                        
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Poster_Backgrounds/Portfolio_10sml.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow" alt="">
+                        </div>
+                    </div>           
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Poster_Backgrounds/Portfolio_11sml.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow" alt="">
+                        </div>
+                    </div>   
+
+                </div>
+            </div>                     
+            <!--Posters and Backgrounds-->
+
+            <!--Fan Art-->
+            <div class="gallery-container">
+                <div id="fanart" class="titleInfo">
+                    <h1>Fanart</h1>
+                    <p></p>
+                </div>
+
+                <div class="flexbox-container">
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Fanart/Portfolio_1sml.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow" alt="">
+                        </div>
+                    </div>                          
+                    
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Fanart/Portfolio_2sml.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow" alt="">
+                        </div>
+                    </div>      
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Fanart/Portfolio_3sml.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow" alt="">
+                        </div>
+                    </div>       
+
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="Images/Fanart/Portfolio_4sml.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_5sml.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_6sml.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow" alt="">
+                        </div>
+                    </div>   
+                    
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_7sml.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_8sml.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_9sml.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_10sml.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Fanart/Portfolio_11sml.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow" alt="">
+                        </div>
+                    </div>    
+
+                </div>
+            </div>
+            <!--Fan Art-->
+
+            <div class="gallery-container">
+                <div id="animation" class="titleInfo">
+                    <h1>Animation</h1>
+                    <p></p>
+                </div>
+
+                <div class="flexbox-container">
+
+                    <div class="photo-container">
+                        <div class="photo landscape">
+                            <img src="Images/Animations/Purogemas_walkin3c.gif">
+                        </div>
+                    </div>
+                    
+                    <div class="photo-container">
+                        <div class="photo ani">
+                            <img src="Images/Animations/just spacing out animatesml.gif">
+                        </div>
+                    </div>
+
+                    <div class="photo-container">
+                        <div class="photo ani">
+                            <img src="Images/Animations/Loadign-Taco.gif">
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>       
+
+        <!-- The Modal/Lightbox -->
+         <div id="portModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+    
+            <div class="mySlides">
+                <div class="numbertext">1 /31 </div>
+                <img src="Images/Artwork/Portfolio_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 /31 </div>
+                <img src="Images/Artwork/Portfolio_2.jpg"  style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 /31 </div>
+                <img src="Images/Artwork/Portfolio_3.jpg" style="width:100%">
+            </div>
+
+            
+            <div class="mySlides">
+                <div class="numbertext">4 /31 </div>
+                <img src="Images/Artwork/Portfolio_5.jpg" style="width:100%">
+            </div>
+
+
+            <div class="mySlides">
+                <div class="numbertext">5 /31 </div>
+                <img src="Images/Artwork/Portfolio_5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 /31 </div>
+                <img src="Images/Artwork/Portfolio_6.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 /31 </div>
+                <img src="Images/Artwork/Portfolio_7.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 /31 </div>
+                <img src="Images/Artwork/Portfolio_8.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 /31 </div>
+                <img src="Images/Artwork/Portfolio_9.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 /31 </div>
+                <img src="Images/Artwork/Portfolio_10.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">11 /31</div>
+                <img src="Images/Poster_Backgrounds/Portfolio_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">12 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">13 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_3.jpg" style="width:100%">
+            </div>
+
+            <!--
+            <div class="mySlides">
+                <div class="numbertext">14 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_4.jpg" style="width:100%">
+            </div>
+            -->
+
+            <div class="mySlides">
+                <div class="numbertext">14 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">15 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_6.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">16 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_7.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">17 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_8.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">18 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_9.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">19 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_10.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">20 /31 </div>
+                <img src="Images/Poster_Backgrounds/Portfolio_11.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">21 /31 </div>
+                <img src="Images/Fanart/Portfolio_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">22 /31 </div>
+                <img src="Images/Fanart/Portfolio_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">23 /31 </div>
+                <img src="Images/Fanart/Portfolio_3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">24 /31 </div>
+                <img src="Images/Fanart/Portfolio_4.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">25 /31 </div>
+                <img src="Images/Fanart/Portfolio_5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">26 /31 </div>
+                <img src="Images/Fanart/Portfolio_6.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">27 /31 </div>
+                <img src="Images/Fanart/Portfolio_7.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">28 /31 </div>
+                <img src="Images/Fanart/Portfolio_8.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">29 /31 </div>
+                <img src="Images/Fanart/Portfolio_9.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">30 /31 </div>
+                <img src="Images/Fanart/Portfolio_10.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">31 /31 </div>
+                <img src="Images/Fanart/Portfolio_11.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+    
+        </div>	
+        <!-- The Modal/Lightbox -->
+
+        <script src="JS/slideshow.js"></script>
+
+        </div>
+        <!--Gallery-->	
+
+
+         <!--Contact-->
+         <div class="contact-popup" id="myContact">
+            <span class="btn close" onclick="closeContact()">&times;</span>
+            <div class="popup_column_1">
+                <form action="" class="contact-container">
+                    <h1>Hello! Got Questions? Contact Me</h1>
+                
+                    <label for="name"><b>Name*:</b></label>
+                    <input type="text" name="name" required>
+
+                <!--
+                    <label for="surname"><b>Surname: </b></label>
+                    <input type="text" name="surname" required>   
+                -->
+
+                    <label for="email"><b>Email*:</b></label>
+                    <input type="text" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="Subject"> 
+
+                    
+                    <label for="message">Leave a Message*:</label>
+                    <textarea type="text" name="Message" requird></textarea>
+                
+                    <button type="submit" class="btn">Submit</button>
+                    <!--<button type="submit" class="btn close" onclick="closeContact()">Close</button>-->
+                </form>
+             </div>
+
+            <div class="popup_column_2 Deen">
+                <img src="Images/contact_pic.jpg" alt="Deen Pancake">
+            </div>
+        </div>
+
+        <script src="JS/contact-form.js"></script>
+        <!--Contact End-->
+
+<a href="#bannerBorder">back to Top</a>
+
+    <footer>
+        <div class="container">
+            
+            <!--Socials-->
+            <div id="socials">
+                <a href="https://www.instagram.com/"><img src="Images/Instagram_icon.png"></a>
+                <a href="https://twitter.com/"><img src="Images/twitter.png"></a>
+                <a href="https://linkedin.com/"><img src="Images/twitter.png"></a><br>   
+            </div>
+            <!--Socials end-->
+
+            <div class="copyright">
+                <p>&#169; copyright 2021 Sarah Welland</p>
+            </div>
+        </div>
+    </footer>
+        
+    </body>
+
+</html> 
