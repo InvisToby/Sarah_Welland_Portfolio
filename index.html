@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>SarahWelland(inVisToby) Portfolio</title>
-        <link rel="stylesheet" href="CSS/basic-style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Art Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Sarah Welland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Welland(inVisToby) Portfolio</title>
+    <link rel="stylesheet" href="CSS/shared-style.css">
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
 
-    <body>
-    
+<body>
+
+    <div id="bannerBorder"></div>
+
+    <div>
+        <div class="bannerHere"></div>
+    </div>
+
+    <div class="headerNav">
+
+        <div class="nameLeft">
+            <h2>Sarah Welland</h2>
+        </div>
+
         <div class="nav">
+
             <div class ="menu-container">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#contact">Contact</a>    
+                <ul>
+                    <li><a href="#gallery_Preview">Preview</a></li>    <!--rename-->
+                    <li><a href="gallery.html">Gallery</a></li>    
+                    <li><a href="#about">About</a></li> 
+                </ul>
             </div>
         </div>
 
-        <!--Home-->
-        <div id="home">
-            <br>
-            <br>
+        <div class="contact">
+            <a class="open-contact" onclick="openContactForm()"><h2>Contact</h2></a>
         </div>
-        <!--Home End-->
+    </div>
+        
+    <!--Home-->
+    <div id="home">
+        <p>A illustrator and Web designer 
+            <br>who specializes in the digital medium. 
+            <br>loves to create Backgrounds, Posters.</p>
+    </div>
+    <!--Home-->
 
         <!--About-->
         <div class="row" id="about">
-            <div class="column_2"> <!--Left Column-->
-                    <img src="Images/icon.jpg" alt="Invis Toby">
-                </div>
+            <div class="about_column_1"> <!--Left Column-->
+                    <img src="Images/TobyIcon.jpg" alt="Invis Toby">
+            </div>
 
-                <div class="column_1"> <!--right Column-->
+                <div class="about_column_2"> <!--right Column-->
                     <h1>Hello</h1>
                         <p>
                         My name is Sarah Welland (or Invis Toby) and I am a illustrator and Web designer based in the South West of England. 
@@ -41,294 +66,132 @@
                         <p>    
                         I am a graduate of Pitmans web development course, Diploma and learned the following web and programming languages: HTML, CSS, JavaScript.
                         would love to work with you on your project. 
-                        <a href="#contact">Contact me below!</a>
-                        <br>
-                        <br>
-                        Please note this site is still partially under construction
                         </p>
                 </div>
         </div>
         <!--About End-->
 
         <!--Gallery-->
-        <div id="gallery"> <!--Link to another page in the fuutre-->
+        <div id="gallery_Preview"> <!--Link to another page in the fuutre-->
             <div class="container">
-            <div>
-                <div>    
-                    <h1>Gallery</h1>
-                    <p> A sample of some of my pieces, from Illustrations, Design, commission pieces and Fanart<br>
-                        <!--(Click to enlarge) for later when cane get images to open on screen--></p>
-                </div>
-
-                <div class="gallery-container">
-                    <div class="flexbox-container">
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_1a.jpg" alt="NSR Fashion Collab backgrounds">
-                                <div class="photo-overlay">
-                                    <p>NSR Fanart Fashion Collab backgrounds</p>
-                                </div>
-                            </div>
-                        </div>                        
-                        
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_1.jpg" alt="Poster Cipher friends from Space">
-                                <div class="photo-overlay">
-                                    <p>Poster Cipher friends from Space</p>
-                                </div>   
-                            </div>
-                        </div>
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_2.jpg" alt="Poster The Invisibleman Standing out">
-                                <div class="photo-overlay">
-                                    <p>Poster The Invisibleman Standing out</p>
-                                </div>   
-                            </div>
-                        </div>
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_3.jpg" alt="FANART NSR Poster Seasons Greetings">
-                                <div class="photo-overlay">
-                                    <p>FANART NSR Poster Seasons Greetings</p>
-                                </div>   
-                            </div>
-                        </div>
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_4.jpg" alt="FANART NSR COOKIERUN Seasonal secret Secret Santa">
-                                <div class="photo-overlay">
-                                    <p>FANART NSR & COOKIERUN Seasonal secret Secret Santa</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_5.jpg" alt="Poster Happy New Year">
-                                <div class="photo-overlay">
-                                    <p>Poster Happy New Year (featuring OC Toby</p>
-                                </div>   
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_6.jpg" alt="Poster Stargazing Alone">
-                                <div class="photo-overlay">
-                                    <p>Poster (OC) Stargazing Alone</p>
-                                </div>   
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_7.jpg" alt="FANART NSR Poster Stargazing with friends">
-                                <div class="photo-overlay">
-                                    <p>FANART NSR & OC Poster Stargazing with friends</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="photo-container">
-                            <div class="photo">
-                                <div class="landscape">
-                                <img src="Images/Portfolio_8.jpg" alt="Poster Aster the Gentle Giant">
-                                <div class="photo-overlay">
-                                    <p>Poster: OC, Aster the Gentle Giant</p>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="photo-container">
-                            <div class="photo">
-                                <div class="landscape">
-                                    <img src="Images/Portfolio_9.jpg" alt="Seasonal Banner Secret Santa">
-                                    <div class="photo-overlay">
-                                        <p>Seasonal Banner Secret Santa</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_10.jpg" alt="Christmas card Star">
-                                <div class="photo-overlay">
-                                    <p>Christmas card Design idea: Star</p>
-                                </div>    
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_11.jpg" alt="Commission Cirrus">
-                                <div class="photo-overlay">
-                                    <p>Commission work: OC Cirrus</p>
-                                </div>    
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_12.jpg" alt="Commission Azira">
-                                <div class="photo-overlay">
-                                    <p>Commission Work: OC Azira</p>
-                                </div>   
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_13.jpg" alt="Theatre Book thawing out">
-                                <div class="photo-overlay">
-                                    <p>Theatre Book: thawing out</p>
-                                </div>    
-                            </div>
-                        </div>
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_13a.jpg" alt="Theatre Book Its ok To fly, Poem, theatre project">
-                                <div class="photo-overlay">
-                                    <p>Theatre Book: "Its ok To fly" inspired by Poem</p>
-                                </div>   
-                            </div>
-                        </div>                        
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_14.jpg" alt="Theatre Book Treemendous">
-                                <div class="photo-overlay">
-                                    <p>Theatre Book: "Treemendousinspired" by poem</p>
-                                </div>    
-                            </div>
-                        </div>
-                                
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_15.jpg" alt="Theatre Book Salmon">
-                                <div class="photo-overlay">
-                                    <p>Theatre Book Salmon</p>
-                                </div>   
-                            </div>
-                        </div>
-                                    
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_16.jpg" alt="Portrait cat Otto">
-                                <div class="photo-overlay">
-                                    <p>Portrait cat Otto</p>
-                                </div>   
-                            </div>
-                        </div>
-
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_17.jpg" alt="Portrait Uncle Ali">
-                                <div class="photo-overlay">
-                                    <p>Portrait Uncle Ali</p>
-                                </div>   
-                            </div>
-                        </div>
-                        
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_18.jpg" alt="FANART NSR Poster Twitch Stream 'spicy ASMR' ">
-                                <div class="photo-overlay">
-                                    <p>FANART NSR Poster Twitch Stream 'spicy ASMR'</p>
-                                </div>  
-                            </div>
-                        </div>
-                
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_19.jpg" alt="Captian James Toby Hook">
-                                <div class="photo-overlay">
-                                    <p>Original Character Captian James Toby Hook</p>
-                                </div>   
-                            </div>
-                        </div>
-                            
-                        <div class="photo-container">
-                            <div class="photo">
-                                <div class="landscape">
-                                    <img src="Images/Portfolio_20.jpg" alt="Wedding Table No 2 & 3">
-                                    <div class="photo-overlay">
-                                        <p>Wedding Table No 2 & 3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="Images/Portfolio_21.jpg" alt="Simple wedding Invite japense Maple Leaves">
-                                <div class="photo-overlay">
-                                    <p>Simple wedding Invite japense Maple Leaves</p>
-                                </div>    
-                            </div>
-                        </div>
+                    <div class="about_Gallery">    
+                        <h1>Gallery</h1>
+                        <p> A sample of some of my pieces, from Illustrations, Design, commission pieces and Fanart<br>
+                            <!--(Click to enlarge) for later when cane get images to open on screen--></p>
                     </div>
-                </div>
-                    <p>You can view my coding projects on my GitHub profile here:</p>
-                        <br>
-                    <div class="Git_link"> 
-                        <a href="https://github.com/InvisToby" target="_blank"><img src="Images/GitHug_Toby.png" alt="Invis Toby"></a> 
-                        <br>
-                        <a href="https://github.com/InvisToby" target="_blank">InvisToby</a> 
+
+                    <div class="gallery-container">
+
+                        
+                        <div class="preview">
+                            <a href="gallery.html#misc"><img src="Images/preview_3.jpg" class="preview_image"></a>
+                            <div class="text-Overlay"><p>Artwork</p></div>
+                        </div>
+                        
+                        <div class="preview">
+                            <a href="gallery.html#PnE"><img src="Images/preview_1.jpg" class="preview_image"></a>
+                            <div class="text-Overlay"><p>Poster and Enviroment pieces</p></div>
+
+                        </div>
+
+                        <div class="preview">
+                            <a href="gallery.html#fanart"><img src="Images/preview_4.jpg" class="preview_image"></a>
+                            <div class="text-Overlay"><p>Fan Art</p></div>
+                        </div>
+
+                                                
+                        <div class="preview">
+                            <a href="gallery.html#animation"><img src="Images/preview_2.jpg" class="preview_image"></a>
+                            <div class="text-Overlay">
+                                <p>Animations</p>
+                            </div>
+                        </div>
+
+
                     </div>
-                </div>
+
+                    <div class="about_Git">
+                        <p>You can view my coding projects on my GitHub profile here:</p>
+                        <br>
+
+                        <div class="Git_link"> 
+                            <a href="https://github.com/InvisToby" target="_blank"><img src="Images/GitHug_Toby.png" alt="Invis Toby"></a> 
+                            <br>
+                            <a href="https://github.com/InvisToby" target="_blank">InvisToby</a> 
+                        </div>
+
+                    </div>
+
             </div>
         </div>
 
-        <!--Gallery End-->
+    <!--Gallery End-->
 
-        <!--Socials-->
-        <div class="container">
-            <div class="socials">
-                <a href="https://www.instagram.com/invisibletoby/"><img src="Images/Instagram_icon.png"></a>
-                <a href="https://www.linkedin.com/in/sarah-welland-34615040/"><img src="Images/Linkedin_icon.png"></a>
-            </div>
-        </div>
-        <!--Socials end-->
-        
+    <!--Socials-->
+
+    <!--Socials-->
+    
         <!--Contact-->
-        <div id="contact">
-            <div class="contact-container">
-                    <h1>Contact</h1>
-                    <div>	
-                        						
-                        <form action="https://formspree.io/f/xgepqnwr" method="POST">
-                            Name:<input type="text" name="Name"> 
-                            Email:<input type="text" name="Email"> 
-                            Subject:<input type="text" name="Subject"> 
-                            Message:<input type="text" name="Message"> 
-                                <div class="submit">
-                                    <input type="submit" value="Send">
-                                </div>
-                    </div>
+
+        <div class="contact-popup" id="myContact">
+            <span class="btn close" onclick="closeContact()">&times;</span>
+            <div class="popup_column_1">
+                <form action="" class="contact-container">
+                    <h1>Hello! Got Questions? Contact Me</h1>
+                
+                    <label for="name"><b>Name*:</b></label>
+                    <input type="text" name="name" required>
+
+                <!--
+                    <label for="surname"><b>Surname: </b></label>
+                    <input type="text" name="surname" required>   
+                -->
+
+                    <label for="email"><b>Email*:</b></label>
+                    <input type="text" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="Subject"> 
+
+                    
+                    <label for="message">Leave a Message*:</label>
+                    <textarea type="text" name="Message" requird></textarea>
+                
+                    <button type="submit" class="btn">Submit</button>
+                    <!--<button type="submit" class="btn close" onclick="closeContact()">Close</button>-->
+                </form>
+             </div>
+
+            <div class="popup_column_2 Deen">
+                <img src="Images/contact_pic.jpg" alt="Deen Pancake">
             </div>
         </div>
 
-        <div>
-            
-        </div>
         <!--Contact End-->
 
-        <footer>
-            <div class="container">
-                <p>copyright Sarah Welland &copy;2021 </p>
-            </div>
-        </footer>
-        
-    </body>
+        <a href="#bannerBorder">back to Top</a>
+
+<script src="JS/contact-form.js"></script>
+
+<!--<img src="Images/starry_cloud_bk.png" alt="Starry clouds Background" class="starry_clouds">-->
+
+    <footer>
+
+        <!--Socials-->
+        <div id="socials">
+            <a href="https://www.instagram.com/"><img src="Images/Instagram_icon.png"></a>
+            <a href="https://twitter.com/"><img src="Images/twitter.png"></a>
+            <a href="https://linkedin.com/"><img src="Images/twitter.png"></a><br>   
+        </div>
+        <!--Socials end-->
+
+        <div class="copyright">
+            <p>&#169; copyright 2021 Sarah Welland</p>
+        </div>
+
+    </footer>
+    
+</body>
 
 
-</html> 
+</html>
