@@ -71,17 +71,16 @@ div {
   height: auto;
   position: absolute;
   top: 800px;
-  display: grid; /*Displays a block-level grid container*/
-  grid-template-columns: auto auto auto; /*3 coloumn for navigation*/
-  grid-gap: 10px; /*small space between grid*/
+  /*display: grid; Displays a block-level grid container*/
+  /*grid-template-columns: auto auto auto; 3 coloumn for navigation*/
+  /*grid-gap: 10px; small space between grid*/
   padding: 10px 20px;
   overflow: hidden;
   background-color: transparent;
-
 }
 
 .nameLeft{
-  width: 350px;
+  float: left;
   height: auto;
   padding: 10px 20px;
 
@@ -92,7 +91,6 @@ div {
 }
 
 .nav{
-  column-width: 700px;
   height: auto;
   min-height: auto;
   display: block;
@@ -100,37 +98,56 @@ div {
   overflow: hidden; 
 }
 
+
 .menu-container{
+  float:right;
   height: auto;
   padding: 10px;
 
 }
 
-.menu-container a{
-  padding: 20px; /* padding for text */
+
+ul {
+  list-style-type: none; /*removes list styles*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+
+  padding: 14px 16px;
+
   text-decoration: none; /*remove underline*/
   color: rgb(253, 253, 254); /*colour white*/
   font-family: Bahnschrift;
   font-size: 20px;
   text-align: center; /*center text*/
+
+  padding: 20px; /* padding for text */
+
   cursor: pointer;
 }
 
-.menu-container a:hover{
+li a:hover:not(.active) {
+  /*background-color: #111;*/
   color: rgb(216, 147, 133);/*font color when hover over navbar */
   font-weight: bold; /* bold when hovered over */
 }
 
-li {
-  float: right;
-  list-style-type: none; /*removes list styles*/
-}
 
 /*==================== Pop-up Contact Form ====================*/
 
+/*========== Contact button for Pop-up ==========*/
+
 .contact{
   display: block;
-  width: 250px;
+  float: right;
   height: auto;
   padding: 10px 20px;
   padding-left: 800px;
@@ -141,7 +158,8 @@ li {
 }
 
   
-/* The Close Button */
+/*========== The Close Button ==========*/
+
 .close {
   color: white;
   position: absolute;
@@ -158,84 +176,70 @@ li {
   cursor: pointer;
 }
 
-.popup_column_1 {
-/*background-image: url(../Images/Stars.png);*/
-  float: left; 
-  width: 50%;  /*This ensures one column takes up half the page width */
-  /*padding: 10px; 
-  padding-top: 3%;  This ensures there is space between the top of the column and our headings */
-  /*height: 600px;  column height 600px */
-  /*background-color: rgba(158, 184, 218, 0.635)*/
-}
+/*========== Main Contact Form ==========*/
 
-.popup_column_2 {
-  background-image: url(../Images/Stars.png);
-  background-image: linear-gradient(#2e647c, rgb(138, 50, 126));
-  float: right;
-  height: 689px;
-  width: 50%;
-  padding: 10px;
-  padding-left: 10%;
-  padding-top: 3%;
-  background-color: #5c0f52;
-  z-index: 9;
-}
+/*hidden by default*/
 
-.Deen img{
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  margin: auto;
-  margin-top: 150px;
-}
-
-/* hidden by default */
 .contact-popup {
   display: none;
   position: fixed;
-  width: 1200px;
-  height: 400px;
-  top: 25%;
-  left: 30%;
+  width: 50%;
+  /*width: 1200px;
+    height: 400vw;*/
+  top: 12vw; /* down from the top of the viewport */
+  left: 25vw; /* in from the left side of the viewport */
   z-index: 9;
 }
 
+    /*========== Left contact details etc ==========*/
+
+.popup_column_1 {
+  float: left; 
+  width: 50%;  /*Left column takes up half the width */
+
+  /*padding: 10px; 
+  padding-top: 3%;  This ensures space between top of the column and headings */
+}
+
 .contact-container {
-  max-width: 600px;
-  padding: 10px;
+  height: 30vw;
+  max-width: 50vw; /* Relative sizing of the form container - 49% of the viewport width */
+  padding: 1.5vw; /* Adds padding between the form-popup and the form-container */
   background-color: white;
+  font-size: .60vw;
 }
 
 /* Full-width input fields */
 .contact-container input[type=text]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+  width: 100%; /* input boxes will completely fill the width of form-container */
+  padding: .70vw; /* Adds padding to the input boxes */
+  margin: .4vw 0 .4vw 0; /* Adds space between the input boxes and the labels */
+  border: none; /* no border for input boxes */
+  background: Gainsboro; /* background color of the input boxes */
+  font-size: .60vw; /* Relative font sizing based on the width of the viewport */
 }
 
 /* When clicked in, focus, change background colour in box */
 .contact-container input[type=text]:focus{
-  background-color: #ddd;
+  background-color: rgb(219, 203, 221);
   outline: none;
 }
 
-
-/* Full-width textarea */
+/* Full-width textarea makes textarea for message larger */
 .contact-container textarea {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: .70vw;
+  margin: .4vw 0 .4vw 0;
   border: none;
   background: #f1f1f1;
   resize: none;
-  min-height: 200px;
+  min-height: 8vw;
+  font-size: .60vw;
 }
 
 /* When the textarea gets clicked in, focus, change background colour in box  */
 .contact-container textarea:focus {
-  background-color: #ddd;
+  background-color: rgb(219, 203, 221);
   outline: none;
 }
 
@@ -243,25 +247,53 @@ li {
 .contact-container .btn {
   color: #9dbfcf;
   background-color: transparent;
-  padding: 16px 20px;
+  padding: .4vw .6vw;
   border: none;
   cursor: pointer;
+
   width: 100%;
-  margin-bottom:10px;
   opacity: 0.8;
+  margin-bottom: 1vh; /* Adds space between the submit button and the close button */
 }
 
-/* close button colour */
+/* close button colour 
 .contact-container .close {
   color: #9dbfcf;
   background-color: transparent;
 }
+*/
 
 /* hover effects for buttons */
 .contact-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
 
+ /*========== Contact Form Image ==========*/
+    
+ .popup_column_2 {
+  background-image: linear-gradient(#2e647c, rgb(138, 50, 126));
+  float: right;
+  height: 30vw;
+
+  width: 50%;
+
+  padding: 1.5vw; 
+  padding-left: 10%;
+
+
+  background-color: #5c0f52;
+}
+
+.Deen img{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 6vw;
+}
+
+
+/*==================== ====================*/
 
 a:link{
   cursor: pointer;
@@ -272,7 +304,7 @@ a:visited {
   color: white;
 }
 
-/*==================== ====================*/
+
 
 /*row*/
 
@@ -296,6 +328,7 @@ a:visited {
   z-index: -1;
 }
 */
+
 /*==================== Footer and Socials ====================*/
 footer{
   display: block;
