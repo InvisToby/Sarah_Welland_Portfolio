@@ -109,6 +109,21 @@
   height: 350px;
 }
 
+@media screen and (max-width: 1080px) {
+  .photo img {
+    width: 123.5px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .landscape img {
+    width: 247.5pxpx;
+    height: 175;
+  }
+}
+
+
 /*==================== text photo-overlay ====================*/
   
 .photo-overlay{

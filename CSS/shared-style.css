@@ -20,6 +20,7 @@ body {
   background: url(../Images/starry_cloud_bk.png) no-repeat 100%;
   background-position: bottom;
   background-size: 100%; 
+  background-color:rgb(31, 18, 73);
 }
 
 h1{
@@ -67,13 +68,13 @@ div {
 /*==================== nav bar ====================*/
 
 .headerNav{
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: auto;
+  height: 100px;
   position: absolute;
   top: 800px;
-  /*display: grid; Displays a block-level grid container*/
-  /*grid-template-columns: auto auto auto; 3 coloumn for navigation*/
-  /*grid-gap: 10px; small space between grid*/
+
   padding: 10px 20px;
   overflow: hidden;
   background-color: transparent;
@@ -82,7 +83,7 @@ div {
 .nameLeft{
   float: left;
   height: auto;
-  padding: 10px 20px;
+  margin: 0px;
 
   font-family: Bahnschrift;
   font-size: 25px;
@@ -90,46 +91,42 @@ div {
   color: rgb(253, 253, 254);/*colour white*/
 }
 
-.nav{
+.menu-container{
+  margin: 30px auto;
   height: auto;
-  min-height: auto;
-  display: block;
-  padding: 10px 10px;
-  overflow: hidden; 
 }
 
-
-.menu-container{
-  float:right;
+.contactRight {
+  float: right;
   height: auto;
-  padding: 10px;
-
+  
+  font-family: Bahnschrift;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(253, 253, 254);/*colour white*/
 }
 
 
 ul {
   list-style-type: none; /*removes list styles*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 li {
-  float: left;
+  display:inline-block;
+
 }
 
 li a {
-  display: block;
-
-  padding: 14px 16px;
-
+  /* padding: 14px 16px; */
   text-decoration: none; /*remove underline*/
   color: rgb(253, 253, 254); /*colour white*/
   font-family: Bahnschrift;
   font-size: 20px;
   text-align: center; /*center text*/
 
-  padding: 20px; /* padding for text */
+  padding: 0px 30px;
+  top: 50px;
 
   cursor: pointer;
 }
@@ -140,6 +137,12 @@ li a:hover:not(.active) {
   font-weight: bold; /* bold when hovered over */
 }
 
+.contactRight:hover:not(.active) {
+  /*background-color: #111;*/
+  color: rgb(216, 147, 133);/*font color when hover over navbar */
+  font-weight: bold; /* bold when hovered over */
+  cursor: pointer;
+}
 
 /*==================== Pop-up Contact Form ====================*/
 
@@ -147,16 +150,15 @@ li a:hover:not(.active) {
 
 .contact{
   display: block;
-  float: right;
+  right: 5%;
   height: auto;
   padding: 10px 20px;
-  padding-left: 800px;
+  margin-left: 5%; /* Changed to Margin */
   font-size: 20px;
   text-align: center;
   color: rgb(253, 253, 254);/*colour white*/
   cursor: pointer;
 }
-
   
 /*========== The Close Button ==========*/
 

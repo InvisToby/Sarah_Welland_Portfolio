@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="CSS/shared-style.css">
     <link rel="stylesheet" href="CSS/about.css">
 
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
 
     <div id="bannerBorder"></div>
@@ -20,29 +21,34 @@
         <div class="bannerHere"></div>
     </div>
 
-    <div class="headerNav">
 
-        <div class="nameLeft">
-            <h2>Sarah Welland</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <span class="navbar-text">
+            Sarah Welland
+          </span>
+              
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Socials</a>
+            </li>
+          </ul>
+         
+          <a class="navbar-brand" href="#">Contact</a>
+       
         </div>
 
-            <div class="menu-container">
-                <ul>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="gallery.html">Gallery</a></li>
-                   <!-- <li><a href="#gallery_Preview">Preview DO I NEED THIS</a></li>    rename remove-->
-                   <li><a href="#socials">Socials</a></li>
-                    
-                </ul>
-                
-        </div>
-        
-        <div class="contactRight">
-            <a class="open-contact" onclick="openContactForm()"><h2>Contact</h2></a>
-        </div>
-    
-    </div>
-        
+      </nav>
+
+
     <!--Home-->
     <div id="home">
         <p>A illustrator and Web designer 
