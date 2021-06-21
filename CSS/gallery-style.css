@@ -184,59 +184,38 @@
   max-width: 1920px;
   height: 1000px;
 }
-
-/* small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .modal-content,
-  .Slides_Landscape{
-    height: 250px;
-    width: 350px;
-  }
+@media (max-width: 640px){
+  .modal {padding-top: 50px;}
 }
 
 /* small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .modal-content,
-  .Slides_Portrait{
-    height: 250px;
-    width: 175px;
+@media (max-width: 640px) {
+  .modal-content{
+    width: 600px;
+    height: 700px;
+    background-color: teal;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px){
-  .modal-content,
-  .Slides_Landscape{
-    height: 500px;
-    width: 700px;
+/* small devices (phones, 600px and down) */
+@media (max-width: 640px) {
+  .Slides_Landscape,
+  img.SL{
+    width: 100px;
+    height: 700px;
   }
 }
 
-@media screen and (max-width: 992px){
-  .modal-content,
-  .Slides_Portrait{
-    height: 500px;
-    width: 350px;
+@media (max-width: 640px) {
+  .Slides_Portrait,
+  img.SP{
+    width: 600px;
+    height: 700px;
+
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-  .modal-content,
-  .Slides_Landscape{
-    height: 1000px;
-    width: 1400px;
-  }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-  .modal-content,
-  .Slides_Portrait{
-    height: 1000px;
-    width: 700px;
-  }
-}
 
 /* The Close Button */
 .close {
