@@ -1,0 +1,145 @@
+/*========== Main Contact Form ==========*/
+
+/*hidden by default*/
+
+.contact-popup {
+    display: block;
+    position: fixed;
+    border-radius: 10px; /*rouded edges for softer look*/
+    width: 50%;
+    height: auto;
+    top: 12vw; /* down from the top of the viewport */
+    left: 25vw; /* in from the left side of the viewport */
+    z-index: 9;
+    background-color: rgb(60, 18, 102);
+    color: #bbe1f3;
+  }
+
+  .contact-popup h1{
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+  }
+  
+  /*
+  .flex-container { in gallery
+    display: -webkit-flex; /*align images
+    display: flex; /*align images
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+    padding: 10px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  */
+      /*========== Left contact details etc ==========*/
+  
+  .popup_column_1 {
+    float: left; 
+    width: 49%; /* This ensures column up half the width */
+    height: auto;
+    padding: .30vw; 
+  }
+  
+  .contact-container {
+    width: 100%; 
+    height: auto;
+    background-color: rgba(76, 47, 105);
+    border-radius: 10px; /*rouded edges for softer look*/
+  }
+  
+  /* Full-width input fields */
+  .contact-container input[type=text]{
+    width: 98%; /* input boxes will completely fill the width of form-container */
+    padding: .60vw; /* Adds padding to the input boxes */
+    margin: .4vw .2vw .4vw .2vw; /* Adds space between the input boxes and the labels */
+    border: none; /* no border for input boxes */
+    border-radius: 10px; /*rouded edges for softer look*/
+    background: rgb(219, 216, 212); /* background color of the input boxes */
+    font-size: .50vw; /* Relative font sizing based on the width of the viewport */
+  }
+  
+  /* When clicked in, focus, change background colour in box */
+  .contact-container input[type=text]:focus{
+    background-color: rgb(219, 203, 221);
+    outline: none;
+  }
+  
+  /* Full-width textarea makes textarea for message larger */
+  .contact-container textarea {
+    width: 98%; 
+    padding: .60vw; 
+    margin: .4vw .2vw .4vw .2vw; 
+    border: none;
+    border-radius: 10px; 
+    background: rgb(220, 220, 220); 
+    min-height: 7vw;
+    font-size: .50vw;
+  }
+  
+  /* When the textarea gets clicked in, focus, change background colour in box  */
+  .contact-container textarea:focus {
+    background-color: rgb(219, 203, 221);
+    outline: none;
+  }
+  
+  /*button submit style */
+  .contact-container .btn {
+    color: #bbe1f3;
+    font-size: .80vw; /* Relative sizing of text */
+    letter-spacing: .3vw; /* Adds slight spacing between the letters */
+    width: 100%;
+    height: auto; /* Allows the height to be resized depending on the content showing */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    opacity: 0.5;
+  }
+
+  /* close button colour 
+  .contact-container .close {
+    color: #9dbfcf;
+    background-color: transparent;
+  }
+  */
+
+/* hover effects for buttons */
+.contact-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  /*========== Contact Form Image ==========*/
+    
+    
+  .popup_column_2 {
+    float: right;
+    width: 49%; 
+    border-radius: 10px;
+
+    background-color: transparent;
+    margin: auto;
+    /*background-image: linear-gradient(#2e647c, rgb(138, 50, 126));*/
+  }
+  
+  
+  .Deen img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-top: 6vw;
+    margin-left: 4vw
+  }
+  
+  
+  /*==================== ====================*/
+  
+
+
+/*==================== ====================*/
+
+
+
+

@@ -7,9 +7,9 @@
     <meta name="author" content="Sarah Welland">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Welland(InVisToby) Portfolio Gallery</title>
-    <link rel="stylesheet" href="CSS/gallery-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/shared-style.css">
-
+    <link rel="stylesheet" href="CSS/gallery-style.css">
 </head>
 
 <body>
@@ -21,28 +21,34 @@
     </div>
 
       <!--Navbar-->
+      <nav class="navbar navbar-expand-lg  bkDarkBlue">
+        <a class="navbar-brand" href="#">Sarah Welland</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <!-- <span class="navbar-toggler-icon toggle_dropdown"></span>-->
+          <img src="Images/burger.png" alt="togleicon" class="toggle_icon">
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <!--<li class="nav-item">
+                <a class="nav-link" href="#socials">Socials</a>
+              </li>-->
 
-      <div class="headerNav">
+          </ul>
 
-        <div class="nameLeft">
-            <h2>Sarah Welland</h2>
-        </div>
-
-            <div class="menu-container">
-                <ul>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="about.html">About</a></li> 
-                    <li><a href="#socials">Socials</a></li>
-                    
-                </ul>
-                
-        </div>
-        
-        <div class="contactRight">
+          <div class="contactRight">
             <a class="open-contact" onclick="openContactForm()"><h2>Contact</h2></a>
         </div>
     
-    </div>
+        </div>
+      </nav>   
     <!--Navbar-->
 
     <!--Gallery-->
@@ -54,7 +60,6 @@
             <br>
             (Click to enlarge)</p>
         </div>
-
     
         <!--Misc-->
         <div class="gallery-container">
@@ -132,7 +137,31 @@
                     <div class="photo landscape">
                         <img src="Images/Artwork/Portfolio_10sml.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Wedding table Numbers">
                     </div>
+                </div>  
+                
+                <div class="photo-container">
+                    <div class="photo ">
+                        <img src="Images/Artwork/commission_1sml.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="Wedding table Numbers">
+                    </div>
                 </div>    
+
+                <div class="photo-container">
+                    <div class="photo ">
+                        <img src="Images/Artwork/commission_2sml.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="Wedding table Numbers">
+                    </div>
+                </div>    
+
+                <div class="photo-container">
+                    <div class="photo landscape">
+                        <img src="Images/Artwork/commission_3sml.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="Wedding table Numbers">
+                    </div>
+                </div>
+
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="Images/Artwork/commission_4sml.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="Wedding table Numbers">
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -145,23 +174,23 @@
                 <p></p>
             </div>
 
-            <div class="flexbox-container">
+            <div class="flex-container">
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_1sml.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_1sml.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="">
                     </div>
                 </div>                        
                 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_2sml.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_2sml.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="">
                     </div>
                 </div>           
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_3sml.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_3sml.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="">
                     </div>
                 </div>                        
                 
@@ -175,44 +204,44 @@
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Poster_Backgrounds/Portfolio_5sml.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_5sml.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="">
                     </div>
                 </div>                        
                 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Poster_Backgrounds/Portfolio_6sml.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_6sml.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow" alt="">
                     </div>
                 </div>           
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_7sml.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_7sml.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow" alt="">
 
                     </div>
                 </div>                        
                 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_8sml.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_8sml.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow" alt="">
                     </div>
                 </div>
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Poster_Backgrounds/Portfolio_9sml.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_9sml.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow" alt="">
                     </div>
                 </div>                        
                 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Poster_Backgrounds/Portfolio_10sml.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_10sml.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow" alt="">
                     </div>
                 </div>           
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Poster_Backgrounds/Portfolio_11sml.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow" alt="">
+                        <img src="Images/Poster_Backgrounds/Portfolio_11sml.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow" alt="">
                     </div>
                 </div>   
 
@@ -227,71 +256,71 @@
                 <p></p>
             </div>
 
-            <div class="flexbox-container">
+            <div class="flex-container">
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Fanart/Portfolio_1sml.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_1sml.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow" alt="">
                     </div>
                 </div>                          
                 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Fanart/Portfolio_2sml.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_2sml.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow" alt="">
                     </div>
                 </div>      
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Fanart/Portfolio_3sml.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_3sml.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow" alt="">
                     </div>
                 </div>       
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="Images/Fanart/Portfolio_4sml.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_4sml.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow" alt="">
                     </div>
                 </div>    
                 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_5sml.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_5sml.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_6sml.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_6sml.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow" alt="">
                     </div>
                 </div>   
                 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_7sml.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_7sml.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_8sml.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_8sml.jpg" onclick="openModal();currentSlide(32)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_9sml.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_9sml.jpg" onclick="openModal();currentSlide(33)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_10sml.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_10sml.jpg" onclick="openModal();currentSlide(34)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
                 <div class="photo-container">
                     <div class="photo landscape">
-                        <img src="Images/Fanart/Portfolio_11sml.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow" alt="">
+                        <img src="Images/Fanart/Portfolio_11sml.jpg" onclick="openModal();currentSlide(35)" class="hover-shadow" alt="">
                     </div>
                 </div>    
 
@@ -305,7 +334,7 @@
                 <p></p>
             </div>
 
-            <div class="flexbox-container">
+            <div class="flex-container">
 
                 <div class="photo-container">
                     <div class="photo landscape">
@@ -333,167 +362,192 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
 
-        <div class="mySlides">
-            <div class="numbertext">1 /31 </div>
+    <!--General Art-->
+    
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">1 /35 </div>
             <img src="Images/Artwork/Portfolio_1.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">2 /35 </div>
             <img src="Images/Artwork/Portfolio_2.jpg"  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">3 /35 </div>
             <img src="Images/Artwork/Portfolio_3.jpg" style="width:100%">
         </div>
 
         
-        <div class="mySlides">
-            <div class="numbertext">4 /31 </div>
-            <img src="Images/Artwork/Portfolio_5.jpg" style="width:100%">
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">4 /35 </div>
+            <img src="Images/Artwork/Portfolio_4.jpg" style="width:100%">
         </div>
 
 
-        <div class="mySlides">
-            <div class="numbertext">5 /31 </div>
-            <img src="Images/Artwork/Portfolio_5.jpg" style="width:100%">
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">5 /35 </div>
+            <img src="Images/Artwork/Portfolio_5.jpg" style="width:100%" >
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">6 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">6 /35 </div>
             <img src="Images/Artwork/Portfolio_6.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">7 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">7 /35 </div>
             <img src="Images/Artwork/Portfolio_7.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">8 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">8 /35 </div>
             <img src="Images/Artwork/Portfolio_8.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">9 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">9 /35 </div>
             <img src="Images/Artwork/Portfolio_9.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">10 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">10 /35 </div>
             <img src="Images/Artwork/Portfolio_10.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">11 /31</div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">11 /35 </div>
+            <img src="Images/Artwork/commission_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">12 /35 </div>
+            <img src="Images/Artwork/commission_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">13 /35 </div>
+            <img src="Images/Artwork/commission_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">14 /35 </div>
+            <img src="Images/Artwork/commission_4.jpg" style="width:100%">
+        </div>
+
+    <!--Poster Background-->
+        
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">15 /35</div>
             <img src="Images/Poster_Backgrounds/Portfolio_1.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">12 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">16 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_2.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">13 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">17 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_3.jpg" style="width:100%">
         </div>
 
         <!--
         <div class="mySlides">
-            <div class="numbertext">14 /31 </div>
+            <div class="numbertext">14 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_4.jpg" style="width:100%">
         </div>
         -->
 
-        <div class="mySlides">
-            <div class="numbertext">14 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">18 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_5.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">15 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">19 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_6.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">16 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">20 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_7.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">17 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">21 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_8.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">18 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">22 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_9.jpg" style="width:100%">
         </div>
         
-        <div class="mySlides">
-            <div class="numbertext">19 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">23 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_10.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">20 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">24 /35 </div>
             <img src="Images/Poster_Backgrounds/Portfolio_11.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">21 /31 </div>
+        <!--fanart-->
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">25 /35 </div>
             <img src="Images/Fanart/Portfolio_1.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">22 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">26 /35 </div>
             <img src="Images/Fanart/Portfolio_2.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">23 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">27 /35 </div>
             <img src="Images/Fanart/Portfolio_3.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">24 /31 </div>
+        <div class="mySlides Slides_Portrait">
+            <div class="numbertext">28 /35 </div>
             <img src="Images/Fanart/Portfolio_4.jpg" style="width:100%">
         </div>
         
-        <div class="mySlides">
-            <div class="numbertext">25 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">29 /35 </div>
             <img src="Images/Fanart/Portfolio_5.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">26 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">30 /35 </div>
             <img src="Images/Fanart/Portfolio_6.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">27 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">31 /35 </div>
             <img src="Images/Fanart/Portfolio_7.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">28 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">32 /35 </div>
             <img src="Images/Fanart/Portfolio_8.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">29 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">33 /35 </div>
             <img src="Images/Fanart/Portfolio_9.jpg" style="width:100%">
         </div>
         
-        <div class="mySlides">
-            <div class="numbertext">30 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">34 /35 </div>
             <img src="Images/Fanart/Portfolio_10.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">31 /31 </div>
+        <div class="mySlides Slides_Landscape">
+            <div class="numbertext">35 /35 </div>
             <img src="Images/Fanart/Portfolio_11.jpg" style="width:100%">
         </div>
 
@@ -511,12 +565,13 @@
     <!--Gallery-->	
 
 
-        <!--Contact-->
-        <div class="contact-popup" id="myContact">
+    <!--Contact-->
+    <div class="contact-popup" id="myContact">
+    
         <span class="btn close" onclick="closeContact()">&times;</span>
         <div class="popup_column_1">
             <form action="https://formspree.io/f/xgepqnwr" method="POST" class="contact-container">
-                <h1>Hello! Got Questions? Contact Me</h1>
+                <h1>Hello! Got Questions? Just Ask</h1>
             
                 <label for="name"><b>Name*:</b></label>
                 <input type="text" name="name" required>
@@ -534,32 +589,36 @@
 
                 
                 <label for="message">Leave a Message*:</label>
-                <textarea type="text" name="Message" required></textarea>
+                <textarea type="text" name="Message" requird></textarea>
             
                 <button type="submit" class="btn">Submit</button>
                 <!--<button type="submit" class="btn close" onclick="closeContact()">Close</button>-->
             </form>
-            </div>
+        </div>
 
         <div class="popup_column_2 Deen">
-            <img src="Images/contact_pic.jpg" alt="Deen Pancake">
+            <div class="border-container">
+                <img src="Images/contact_pic.jpg" alt="Deen Pancake">
+            </div>
         </div>
     </div>
 
-    <script src="JS/contact-form.js"></script>
     <!--Contact End-->
 
-<a href="#bannerBorder">back to Top</a>
+    <a href="#bannerBorder" class="backtotop"><img src="Images/Back_to_Top.png" alt="Invis Toby"></a>
+
 
 <footer>
     <div class="container">
         
         <!--Socials-->
-        <div id="footer-socials">
+  
+        <div id="socials">
             <a href="https://www.instagram.com/"><img src="Images/Instagram_icon.png"></a>
             <a href="https://twitter.com/"><img src="Images/twitter.png"></a>
             <a href="https://linkedin.com/"><img src="Images/Linkedin_icon.png"></a><br>   
         </div>
+
         <!--Socials end-->
 
         <div class="copyright">
@@ -568,6 +627,12 @@
     </div>
 </footer>
     
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="JS/contact-form.js"></script>
+
 </body>
 
 </html> 
