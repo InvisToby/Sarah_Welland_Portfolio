@@ -107,6 +107,7 @@ div {
 nav ul{
   margin: auto;
   text-align: center;
+  padding: 10px;
 }
 
 li a:hover:not(.active) {
@@ -128,6 +129,13 @@ li a:hover:not(.active) {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.sticky{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 /*==================== Pop-up Contact Form ====================*/
 
