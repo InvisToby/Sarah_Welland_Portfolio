@@ -193,7 +193,11 @@ footer{
   z-index: 1;
 }
 
-
+@media only screen and (max-width: 992px){
+  footer{
+    display: none;
+  }
+}
 
 .socials{
   position: relative;

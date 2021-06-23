@@ -126,7 +126,7 @@
 @media screen and (max-width: 960px) {
   .landscape img {
     width: 247.5px;
-    height: 175;
+    height: 175px;
   }
 }
 /*==================== text photo-overlay ====================*/
@@ -202,6 +202,33 @@
 }
 */
 
+/* small devices (phones, 600px and down) */
+@media (max-width: 640px) {
+  .modal-content{
+    width: 640px;
+    height: auto;
+  }
+}
+
+/* small devices (phones, 600px and down) */
+@media (max-width: 640px) {
+  .Slides_Landscape,
+  img.SL{
+    width: auto;
+    height: 10%;
+  }
+}
+
+@media (max-width: 640px) {
+  .Slides_Portrait,
+  img.SP{
+    width: auto;
+    height: 10%;
+  }
+}
+
+
+
 /* The Close Button */
 .close {
   color: white;
@@ -224,14 +251,14 @@
 }
 
 .Slides_Portrait {
-  height: 100%;
-  width: auto;
+  height: 1000px;
+  width: 700px;
   margin: auto;
 }
 
 .Slides_Landscape {
-  height: 100%;
-  width: auto;
+  height: 1000px;
+  width: 1400px;
   margin: auto;
 }
 
