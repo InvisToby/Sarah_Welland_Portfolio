@@ -39,10 +39,10 @@
 }
 
 .about_column_1 img{
-  width: 35%;
+  width: 50%;
   height: auto;
   border-radius: 10%;
-  margin: 6vw 12vw;
+  margin: 10% 25%;
 }
 
 .about_column_2 {
@@ -88,7 +88,6 @@
 
 /*====================Art Gallery Preview ====================*/
 
-
 #gallery_Preview{
   text-align: center;
 	display: block;
@@ -97,10 +96,10 @@
   margin-right: auto;
 	padding-top: 10px;
 	padding-bottom: 20px;
-
 }
 
 .about_Gallery{
+  padding: 20px;
   color: #e9ccb5;
 }
 
@@ -123,13 +122,42 @@
   width: 20%;
   height: auto;
   overflow: hidden;
-
+  
 	margin-left: auto;
   margin-right: auto;
 
   cursor: pointer;
   position: relative;
   text-align: center;
+}
+
+/*option1 work with option 3*/
+@media (max-width: 992px){
+  .preview{
+    width: 90%;
+    height: 220px;
+
+  }
+}
+
+/*option2*/
+/*
+@media (max-width: 992px){
+  .preview{
+    width: 70%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+  }
+}
+*/
+
+
+@media (max-width: 992px){
+  .preview{
+    width: 90%;
+    height: 220px;
+  }
 }
 
 .preview_image{
@@ -140,7 +168,28 @@
   overflow: hidden;
   transition: .5s ease;
   backface-visibility: hidden;
+}
 
+/*
+@media (max-width: 992px){
+  .preview_image{
+    width: 100%;
+    height: auto;
+  }
+}
+*/
+
+/*option3 might be a bit trippy moves around alot*/
+
+@media (max-width: 992px){
+  .preview_image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .preview_image:hover {
@@ -151,11 +200,13 @@
   font-size: 20px;
 }
 
-@media (max-width: 992px){
-.preview p{
-  font-size: 14px;
+
+/*@media (max-width: 992px){
+  .preview p{
+    font-size: 14px;
+    }
   }
-}
+*/
 
 .text-Overlay{
   position: absolute;
@@ -166,6 +217,8 @@
   color: white;
   padding: 16px 32px;
 }
+
+/*==================== Img links ====================*/
 
 .Git_link img{
   width: 80px;
