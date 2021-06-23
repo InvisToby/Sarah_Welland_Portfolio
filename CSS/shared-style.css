@@ -77,7 +77,7 @@ div {
 	height: 900px;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .bannerHere{
     height:500px;
   }
@@ -92,12 +92,11 @@ div {
 }
 
 .nameLeft{
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .toggle_dropdown{
   background-color: teal;
-
   width: 50px;
   height: 50px;
   border-radius: 8px;
@@ -116,7 +115,7 @@ nav ul{
 }
 
 ul.navbar-nav{
-  font-size: 40px;
+  font-size: 30px;
 }
 
 li a:hover {
@@ -125,7 +124,7 @@ li a:hover {
 }
 
 .contactRight a{
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .contactRight:hover {
@@ -152,12 +151,12 @@ li a:hover {
 */
 
 ul.navbar-nav{
-  transform: translateX(-20px);
+  transform: translateX(-40px);
 }
 
 @media (max-width: 992px){
   ul.navbar-nav{
-    transform: translateX(20px);
+    transform: translateX(25px);
   }
 }
 
@@ -195,6 +194,14 @@ ul.navbar-nav{
   font-weight: bold;
 }
 
+@media (max-width: 992px){
+  .close{
+    top: 5px;
+    right: 15px;
+    font-size: 35px;    
+  }
+}
+
 .close:hover,
 .close:focus {
   color: #999;
@@ -210,21 +217,21 @@ ul.navbar-nav{
   display: none;
   position: fixed;
   border-radius: 10px; /*rouded edges for softer look*/
-  width: 50%;
+  width: 60%;
   height: auto;
-  top: 12vw; /* down from the top of the viewport */
-  left: 25vw; /* in from the left side of the viewport */
+  top: 25%; /* down from the top of the viewport */
+  left: 20%; /* in from the left side of the viewport */
   z-index: 9;
   background-color: rgb(60, 18, 102);
   color: #bbe1f3;
 }
 
 .contact-popup h1{
-  font-size: 1.5vw;
-  padding-bottom: 1vw;
+  font-size: 26px;
+  padding: 1vw;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-popup{
     width: 80%;
     height: 550px;
@@ -233,7 +240,7 @@ ul.navbar-nav{
   }
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-popup h1{
     font-size: 18px;
   }
@@ -249,7 +256,7 @@ ul.navbar-nav{
   margin: auto;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .popup_column_1{
     width: 100%;
     height: 100%;
@@ -266,7 +273,7 @@ ul.navbar-nav{
   border-radius: 10px; /*rouded edges for softer look*/
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-container{
     width: 90%;
     height: 500px;
@@ -283,10 +290,10 @@ ul.navbar-nav{
   border: none; /* no border for input boxes */
   border-radius: 10px; /*rouded edges for softer look*/
   background: rgb(219, 216, 212); /* background color of the input boxes */
-  font-size: .50vw; /* Relative font sizing based on the width of the viewport */
+  font-size: 14px; /* Relative font sizing based on the width of the viewport */
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-container input[type=text]{
     width: 90%;
     font-size: 14px;
@@ -310,7 +317,7 @@ ul.navbar-nav{
   border-radius: 10px; 
   background: rgb(220, 220, 220); 
   min-height: 7vw;
-  font-size: .50vw;
+  font-size: 14px;
 }
 
 /* When the textarea gets clicked in, focus, change background colour in box  */
@@ -319,7 +326,7 @@ ul.navbar-nav{
   outline: none;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-container textarea{
     width: 90%;
     font-size: 14px;
@@ -340,9 +347,11 @@ ul.navbar-nav{
   background-color: transparent;
   cursor: pointer;
   opacity: 0.5;
+
+  padding: 10px;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 992px){
   .contact-container .btn{
     width: 90%;
     height: auto;
@@ -374,11 +383,11 @@ ul.navbar-nav{
 
 .Deen img{
   width: 15vw;
-  height: 15vw;
+  height: 100%;
   /*margin: 22%;*/
-  margin: 132px;
+  margin: 140px;
   border-radius: 50%;
-  margin-left: 4vw;
+  margin-left: 7vw;
 }
 
 @media only screen and (max-width: 992px){

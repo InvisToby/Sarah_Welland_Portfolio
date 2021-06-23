@@ -89,6 +89,11 @@
   align-content: space-around;
 }
 
+.photo-container p{
+  font-size: 12px;
+  padding: 0;
+}
+
 .photo{
   position: relative;
   line-height: 0;
@@ -115,13 +120,13 @@
   height: 350px;
 }
 
-
+/*
 @media screen and (max-width: 960px) {
   .photo img {
-    width: 123.5px;
-    height: 175px;
+    width: 247.5px;
+    height: 350px;
   }
-}
+}*/
 
 @media screen and (max-width: 960px) {
   .landscape img {
@@ -163,7 +168,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   padding-top: 120px;
   left: 0;
   top: 0;
@@ -187,47 +192,17 @@
 
 @media (max-width: 992px){
   .modal {
-
-    z-index:10;
+    z-index: 10;
   }
 }
 
-
-/* 992px and down (notneeded?
+/* 992px and down */
 @media (max-width: 992px) {
   .modal-content{
     width: 600px;
     height: 700px;
   }
 }
-*/
-
-/* small devices (phones, 600px and down) */
-@media (max-width: 640px) {
-  .modal-content{
-    width: 640px;
-    height: auto;
-  }
-}
-
-/* small devices (phones, 600px and down) */
-@media (max-width: 640px) {
-  .Slides_Landscape,
-  img.SL{
-    width: auto;
-    height: 10%;
-  }
-}
-
-@media (max-width: 640px) {
-  .Slides_Portrait,
-  img.SP{
-    width: auto;
-    height: 10%;
-  }
-}
-
-
 
 /* The Close Button */
 .close {
@@ -260,6 +235,22 @@
   height: 1000px;
   width: 1400px;
   margin: auto;
+}
+
+@media (max-width: 640px) {
+  .Slides_Portrait,
+  img.SP{
+    width: 10%;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .Slides_Landscape,
+  img.SL{
+    width: 10%;
+    height: auto;
+  }
 }
 
 .cursor {
