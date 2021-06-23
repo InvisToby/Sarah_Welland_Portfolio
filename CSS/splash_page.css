@@ -32,7 +32,7 @@ p{
 	line-height: 20px;
 	text-align: center;
   color: #790f6b;
-  font-weight: 500;
+  font-weight: 550;
   letter-spacing: .2em;
   word-spacing: 10pt;
 }
@@ -61,7 +61,7 @@ div {
 
 @media only screen and (max-width: 992px){
   .nav{
-    padding: 30px 70px calc(32px) 70px;
+    padding: 30px 40px calc(32px) 40px;
   }
 } 
 
@@ -83,8 +83,8 @@ div {
 
 @media only screen and (max-width: 992px){
   .titleName{
-    line-height: 25px;
-    font-size: 15px;
+    line-height: 20px;
+    font-size: 14px;
   }
 } 
 
@@ -103,10 +103,8 @@ div {
 }
 
 @media only screen and (max-width: 992px){
-  .menuLinks,
-  ul{
-    font-size: 14px;
-    font-weight: 200;
+  .menuLinks{
+    padding:0;
   }
 } 
 
@@ -138,6 +136,13 @@ li a:hover{
   font-weight: bold; /* bold when hovered over */
 }
 
+@media only screen and (max-width: 992px){
+  li a{
+    font-size: 14px;
+    font-weight: 200;
+    padding:0;
+  }
+} 
 
 /*Full Background slideshow animation*/
 #splashSlideshow{
@@ -188,11 +193,7 @@ footer{
   z-index: 1;
 }
 
-@media only screen and (max-width: 992px){
-  footer{
-    display: block;
-  }
-}
+
 
 .socials{
   position: relative;
@@ -212,9 +213,15 @@ img {
   margin: 0 4px;
 }
 
+@media only screen and (max-width: 992px){
+  img{
+    width: 18px;
+    height: 18px;
+  }
+}
 
 @media only screen and (max-width: 992px){
-  footer p{
+  .copyright p{
     font-size: 14px;
   }
 }
