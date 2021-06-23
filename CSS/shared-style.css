@@ -121,9 +121,18 @@ li a:hover:not(.active) {
   font-weight: bold; /* bold when hovered over */
   cursor: pointer;
 }
- 
+/* affect the about and gallery links
 @media (max-width: 640px){
   nav ul{
+    padding: 10;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+*/
+@media (max-width: 640px){
+.contactRight{
     padding: 10;
     width: 100%;
     margin-left: auto;
@@ -136,6 +145,7 @@ li a:hover:not(.active) {
   top: 0;
   width: 100%;
   z-index: 9;
+  opacity:05;
 }
 /*==================== Pop-up Contact Form ====================*/
 
