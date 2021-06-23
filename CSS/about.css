@@ -98,14 +98,23 @@
 	padding-top: 10px;
 	padding-bottom: 20px;
 
-  font-size: 24px;
-  color: #c0dce9;
+}
+
+.about_Gallery{
+  color: #e9ccb5;
+}
+
+.about_Gallery h1{
+  font-size: 34px;
+}
+
+.about_Gallery p{
+  font-size: 20px;
 }
 
 .flex-container{
   display: flex; /*align images*/
   flex-wrap: wrap;
-
 }
 
 .preview{
@@ -138,6 +147,16 @@
   opacity: 0.3;
 }
 
+.preview p{
+  font-size: 20px;
+}
+
+@media (max-width: 1008px){
+.preview p{
+  font-size: 14px;
+  }
+}
+
 .text-Overlay{
   position: absolute;
   top: 50%;
@@ -145,7 +164,6 @@
   transform: translate(-50%, -50%);
   
   color: white;
-  font-size: 20px;
   padding: 16px 32px;
 }
 

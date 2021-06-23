@@ -121,6 +121,7 @@ li a:hover:not(.active) {
   font-weight: bold; /* bold when hovered over */
   cursor: pointer;
 }
+
 /* affect the about and gallery links
 @media (max-width: 640px){
   nav ul{
@@ -131,12 +132,14 @@ li a:hover:not(.active) {
   }
 }
 */
-@media (max-width: 640px){
-.contactRight{
-    padding: 10;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+ul.navbar-nav{
+  transform: translateX(-40px);
+}
+
+@media (max-width: 992px){
+  ul.navbar-nan{
+    transform: translateX(20px);
   }
 }
 
@@ -145,7 +148,7 @@ li a:hover:not(.active) {
   top: 0;
   width: 100%;
   z-index: 9;
-  opacity:05;
+  opacity:0.7;
 }
 /*==================== Pop-up Contact Form ====================*/
 
@@ -303,7 +306,7 @@ li a:hover:not(.active) {
     font-size: 14px;
     padding: 5px; /* Adds padding to the input boxes */
     margin: 10px 20px;
-    min-height: 7vw;
+    min-height: 8vw;
   }
 } 
 
@@ -392,11 +395,16 @@ a:visited {
 
 .backtotop img{
   cursor: pointer;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
-
+@media only screen and (max-width: 1008px){
+  .backtotop img{
+    width: 50px;
+    height: 50px;
+  }
+} 
 /*==================== Footer and Socials ====================*/
 
 footer{

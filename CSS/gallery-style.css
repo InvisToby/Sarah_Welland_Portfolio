@@ -185,7 +185,15 @@
   height: 1000px;
 }
 
-/* small devices (phones, 1008px and down) */
+@media (max-width: 1008px){
+  .modal {
+    padding-top: 100px;
+    z-index:10;
+  }
+}
+
+
+/* 1008px and down */
 @media (max-width: 1008px) {
   .modal-content{
     width: 600px;

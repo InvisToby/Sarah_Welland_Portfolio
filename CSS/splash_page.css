@@ -59,6 +59,12 @@ div {
   z-index: 2;
 }
 
+@media only screen and (max-width: 992px){
+  .nav{
+    padding: 30px 70px calc(32px) 70px;
+  }
+} 
+
 
 .titleName{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
@@ -75,6 +81,13 @@ div {
   line-height: 2;
 }
 
+@media only screen and (max-width: 992px){
+  .titleName{
+    line-height: 25px;
+    font-size: 15px;
+  }
+} 
+
 .menuLinks{
   display: block;
   position: relative;
@@ -88,6 +101,14 @@ div {
   text-transform: uppercase;
   letter-spacing: .1em;
 }
+
+@media only screen and (max-width: 992px){
+  .menuLinks,
+  ul{
+    font-size: 14px;
+    font-weight: 200;
+  }
+} 
 
 ul{
   list-style-type: none; /*removes list styles*/
@@ -183,4 +204,11 @@ img {
   width: 28px;
   height: 28px;
   margin: 0 4px;
+}
+
+
+@media only screen and (max-width: 992px){
+  footer p{
+    font-size: 14px;
+  }
 }
