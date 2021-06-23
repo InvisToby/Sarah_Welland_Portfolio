@@ -151,7 +151,7 @@
   font-size: 20px;
 }
 
-@media (max-width: 1008px){
+@media (max-width: 992px){
 .preview p{
   font-size: 14px;
   }

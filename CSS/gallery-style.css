@@ -185,22 +185,22 @@
   height: 1000px;
 }
 
-@media (max-width: 1008px){
+@media (max-width: 992px){
   .modal {
-    padding-top: 100px;
+
     z-index:10;
   }
 }
 
 
-/* 1008px and down */
-@media (max-width: 1008px) {
+/* 992px and down (notneeded?
+@media (max-width: 992px) {
   .modal-content{
     width: 600px;
     height: 700px;
   }
 }
-
+*/
 
 /* The Close Button */
 .close {
