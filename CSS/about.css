@@ -6,16 +6,12 @@
   height: 200px;
   background-color:rgb(25, 13, 63);
 
-}
-
-#home p{
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   color: bisque;
   text-align: center;
   padding-top: 50px;
   letter-spacing: .1vw; /* This expands the text slightly */
-
 }
 
 /*==================== About section ====================*/
