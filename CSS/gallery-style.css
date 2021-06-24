@@ -192,18 +192,19 @@
 
 @media (max-width: 992px){
   .modal {
-    z-index: 10;
+    /*z-index: 10;*/
+    padding-top: 80px;
   }
 }
 
-/* 992px and down */
+/* 992px and down
 @media (max-width: 992px) {
   .modal-content{
-    width: 600px;
+    width: 700px;
     height: 700px;
   }
 }
-
+ */
 /* The Close Button */
 .close {
   color: white;
@@ -236,17 +237,26 @@
   width: 1400px;
   margin: auto;
 }
-
-@media (max-width: 640px) {
-  .Slides_Portrait,
+@media (max-width: 992px) {
+  .Slides_Portrait{
+    width: 580px;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
   img.SP{
     width: 10%;
     height: auto;
   }
 }
 
-@media (max-width: 640px) {
-  .Slides_Landscape,
+@media (max-width: 992px) {
+  .Slides_Landscape{
+    width: 680px;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
   img.SL{
     width: 10%;
     height: auto;
