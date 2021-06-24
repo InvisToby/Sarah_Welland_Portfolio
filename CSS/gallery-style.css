@@ -133,6 +133,14 @@
     height: 175px;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .ani img {
+    width: 175px;
+    height: 175px;
+  }
+}
+
 /*==================== text photo-overlay ====================*/
   
 .photo-overlay{
@@ -168,7 +176,7 @@
   display: none;
   position: fixed;
   z-index: 10;
-  padding-top: 120px;
+  padding-top: 80px;
   left: 0;
   top: 0;
   width: 100%;
@@ -224,23 +232,25 @@
 
 .mySlides {
   display: none;
+  text-align: center;
+  font-size: 16px;
 }
 
 .Slides_Portrait {
-  height: 1000px;
-  width: 700px;
+  height: 850px;
+  width: 601px;
   margin: auto;
 }
 
 .Slides_Landscape {
-  height: 1000px;
-  width: 1400px;
+  height: 850px;
+  width: 1190px;
   margin: auto;
 }
 
 .Slides_Ani{
-  height: 1000px;
-  width: 1000px;
+  height: 850px;
+  width: 850px;
   margin: auto;
 }
 
@@ -303,7 +313,8 @@
   }
 }
 
-/*@media screen and (max-width: 992px) and (min-width: 641px)  {
+/*
+@media screen and (max-width: 992px) and (min-width: 641px)  {
   img.SP{
     width: 10%;
     height: auto;
@@ -314,7 +325,8 @@
     width: 10%;
     height: auto;
   }
-}/*
+}
+*/
 
 .cursor {
   cursor: pointer;
