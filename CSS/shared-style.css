@@ -240,11 +240,11 @@ ul.navbar-nav{
   }
 }
 
-@media only screen and (max-width: 992px){
+/*@media only screen and (max-width: 992px){
   .contact-popup h1{
-    font-size: 18px;
+    font-size: 24px;
   }
-}
+}*
 
 /*========== Left contact details etc 992==========*/
 
