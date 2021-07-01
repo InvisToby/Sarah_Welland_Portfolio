@@ -70,39 +70,41 @@ div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: block;
 	height: 800px;
   width: 80%;
-	overflow: hidden;
-	padding-top: 50px;
-	margin-left: auto;
-  margin-right: auto;
-
   background-color: transparent;
   /*background-color:rgba(230, 220, 198, 0.26);*/
   margin: auto;
-
   color: rgb(226, 156, 65);
   text-align: center;
-  font-size: 50px;
+  /*font-size: 50px;*/
+  font-size: 2vw;
   font-weight: 500;
-  
-  /*box-sizing: border-box;
+  /*
+  box-sizing: border-box;
   border: 5px double rgb(236, 226, 226); 
   border-radius: 8px;
   */
-
   padding: 50px 70px calc(54px) 70px;
   z-index: 2;
 }
 
+/*
 @media only screen and (max-width: 992px){
   .logo{
     font-size: 20px;
+    height: 400px;
+    top: 25%;
+  }
+}  
+*/
+
+@media only screen and (max-width: 992px){
+  .logo{
+display: none;
   }
 }
-
 .bannerHere{
   background: url(../Images/space_banner.jpg) no-repeat 100%;
 	background-attachment: fixed;
