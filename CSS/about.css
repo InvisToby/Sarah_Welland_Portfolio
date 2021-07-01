@@ -186,7 +186,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+  }
+}
+
+@media screen and (max-width:992px) {
+  .preview_image img{
+    transition-duration: 5s;
+    transition-delay: 5s;
   }
 }
 

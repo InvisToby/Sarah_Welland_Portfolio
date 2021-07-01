@@ -65,6 +65,30 @@ div {
   height: 10px;
 }
 
+.logo{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  /*background-color:rgba(230, 220, 198, 0.26);*/
+  margin: auto;
+
+  color: rgb(226, 156, 65);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  
+  /*box-sizing: border-box;
+  border: 5px double rgb(236, 226, 226); 
+  border-radius: 8px;
+  */
+
+  padding: 50px 70px calc(54px) 70px;
+  z-index: 2;
+}
+
+
 .bannerHere{
   background: url(../Images/space_banner.jpg) no-repeat 100%;
 	background-attachment: fixed;
