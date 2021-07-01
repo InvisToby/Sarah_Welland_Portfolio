@@ -67,9 +67,18 @@ div {
 
 .logo{
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  display: block;
+	height: 800px;
+  width: 80%;
+	overflow: hidden;
+	padding-top: 50px;
+	margin-left: auto;
+  margin-right: auto;
+
   background-color: transparent;
   /*background-color:rgba(230, 220, 198, 0.26);*/
   margin: auto;
@@ -88,6 +97,11 @@ div {
   z-index: 2;
 }
 
+@media only screen and (max-width: 992px){
+  .logo{
+    font-size: 20px;
+  }
+}
 
 .bannerHere{
   background: url(../Images/space_banner.jpg) no-repeat 100%;
@@ -220,9 +234,9 @@ ul.navbar-nav{
 
 @media (max-width: 992px){
   .close{
-    top: 5px;
-    right: 15px;
-    font-size: 35px;    
+    top: 0px;
+    right: 0px;
+    font-size: 20px;    
   }
 }
 
