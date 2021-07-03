@@ -67,7 +67,7 @@ div {
 
 .logo{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
@@ -85,9 +85,15 @@ div {
   box-sizing: border-box;
   border: 5px double rgb(236, 226, 226); 
   border-radius: 8px;
-  */
+
   padding: 50px 70px calc(54px) 70px;
+    */
   z-index: 2;
+}
+
+.logo img{
+  width: 600px;
+  height: auto;
 }
 
 /*
@@ -102,9 +108,21 @@ div {
 
 @media only screen and (max-width: 992px){
   .logo{
-display: none;
+  /*display: none;*/
+  height: 400px;
+  top: 25%;
   }
 }
+
+
+@media only screen and (max-width: 992px){
+  .logo img{
+  /*display: none;*/
+  width: 300px;
+  height: auto;
+  }
+}
+
 .bannerHere{
   background: url(../Images/space_banner.jpg) no-repeat 100%;
 	background-attachment: fixed;
