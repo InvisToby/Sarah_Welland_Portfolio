@@ -94,8 +94,6 @@
   border: 3px double rgb(99, 47, 112) ;*/
 }
 
-
-
 @media screen and (max-width:992px) {
   .titleInfo{
     font-size: 16px;
@@ -143,19 +141,19 @@
   border-radius: 8px;
   padding: 4px;
   background-color:rgb(87, 29, 99);
-  box-shadow: 3px 3px 10px rgba(3, 45, 56, 0.8);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.884);
 }
 
 .photo img {
-    width: 247px;
-    height: 350px;
-  
-  }
-  
+  width: 247px;
+  height: 350px;
+
+}
+
 .landscape img{
-    width: 495px;
-    height: 350px;
-  }
+  width: 495px;
+  height: 350px;
+}
 
 .ani img {
   width: 350px;
