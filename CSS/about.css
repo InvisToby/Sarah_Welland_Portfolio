@@ -127,8 +127,13 @@
   cursor: pointer;
   position: relative;
   text-align: center;
+  border: 5px double rgb(103, 50, 116) ;
+  border-radius: 5%;
 }
 
+.gallery-container{
+  padding-bottom: 40px;
+}
 /*option1 work with option 3*/
 @media (max-width: 992px){
   .preview{
@@ -226,17 +231,18 @@
 
 /*==================== Img links ====================*/
 
-.Git_link img{
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
+.about_Git {
+  padding: 50px;
+  border-top: 3px double rgb(67, 29, 77) ;
+  border-bottom: 3px double rgb(67, 29, 77) ;
 }
 
-/*.Git_link {
+.Git_link img{
+  width: 120px;
+  height: 120px;
   cursor: pointer;
-}*/
-
-
+  padding: 20px;
+}
 
 a:link{
   cursor: pointer;
