@@ -14,7 +14,7 @@
   width: 100%;
 	overflow: hidden;
 
-  padding-top: 40px;;
+  padding-top: 40px;
   padding-bottom: 20px;
   margin-top: 0;
 
@@ -37,7 +37,6 @@
   border-bottom: 3px double rgb(99, 47, 112) ;
 }
 
-
 .gallery-container{
   width: 80%;
   height: auto;
@@ -53,21 +52,32 @@
   background-color:rgba(31, 18, 73, 0.356);
 }
 
-.first{
-  background:rgb(43, 27, 95);
-  padding-bottom: 20px;;
-}
 
+.first{
+  font-size: 20px;
+  background-color:rgb(53, 27, 95);
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+
+  color: rgb(253, 253, 254);/*colour white*/
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .titleInfo{
   font-size: 20px;
   background-color:rgb(43, 27, 95);
   width: 100%;
-  height: 100px;
+  height: auto;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 8px;
+  
   color: rgb(253, 253, 254);/*colour white*/
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,6 +93,7 @@
   /*padding: 20px;
   border: 3px double rgb(99, 47, 112) ;*/
 }
+
 
 
 @media screen and (max-width:992px) {
@@ -115,12 +126,9 @@
 }
 
 .photo-container{
-  padding-top: 10px;
+  padding: 20px;
   display: inline-block;
-  align-content: space-around;
-  font-size: 12px;
-  text-align: center;
-  color: beige;
+
 }
 
 .photo{
@@ -131,6 +139,11 @@
   border-radius: 8px;
   padding: 1px;
   cursor: pointer;
+
+  border-radius: 8px;
+  padding: 4px;
+  background-color:rgb(87, 29, 99);
+  box-shadow: 3px 3px 10px rgba(3, 45, 56, 0.8);
 }
 
 .photo img {
