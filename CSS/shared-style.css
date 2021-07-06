@@ -69,31 +69,34 @@ div {
 .logo{
   position: absolute;
   top: 55%;
-  left: 41%;
+  left: 51%;
   transform: translate(-50%, -50%);
   display: block;
 	height: 800px;
   width: 80%;
   background-color: transparent;
-  /*background-color:rgba(230, 220, 198, 0.26);*/
+/*
+  background-color:rgba(230, 220, 198, 0.26);
   margin: auto;
   color: rgb(226, 156, 65);
   text-align: center;
-  /*font-size: 50px;*/
+  /*font-size: 50px;
   font-size: 2vw;
   font-weight: 500;
-  /*
   box-sizing: border-box;
   border: 5px double rgb(236, 226, 226); 
   border-radius: 8px;
-
   padding: 50px 70px calc(54px) 70px;
-    */
+    
   z-index: 2;
+  */
 }
 
+
 .logo img{
-  width: 600px;
+  display: block;
+  left: 25%;
+  width: 38%;
   height: auto;
 }
 
