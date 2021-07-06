@@ -92,7 +92,6 @@ div {
   */
 }
 
-
 .logo img{
   position: absolute;
   top: 53%;
@@ -111,42 +110,33 @@ div {
   height: auto;
 }
 
-/*
-@media only screen and (max-width: 992px){
-  .logo{
-    font-size: 20px;
-    height: 400px;
-    top: 25%;
-  }
-}  
-*/
-
-
-@media only screen and (max-width: 1400px){
-  .logo{
-  /*display: none;*/
-  top: 58%;
-  left: 41.5%;
-  }
-}
 
 @media only screen and (max-width: 992px){
-  .logo{
+  .logo {
   /*display: none;*/
-  height: 400px;
-  left: 50%;
-  top: 30%;
+  width: 80%;
+  top: 20%;
+  left: 20%;
   }
 }
-
 
 @media only screen and (max-width: 992px){
   .logo img{
   /*display: none;*/
   width: 300px;
   height: auto;
+  left: 90%;
+  top: 60%;
   }
 }
+
+@media only screen and (max-width: 992px){
+  .logoTitleName img{
+  width: 80%;
+  top: 80%;
+  }
+}
+
 
 .bannerHere{
   background: url(../Images/space_banner2.jpg) no-repeat 100%;
